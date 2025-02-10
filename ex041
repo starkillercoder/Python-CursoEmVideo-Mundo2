@@ -1,0 +1,13 @@
+from datetime import date
+a = int(input('Ano de nascimento: '))
+i = date.today().year - a
+if i <= 9:
+    print('Mirim')
+elif i <= 14:
+    print('Infantil')
+elif i <= 19:
+    print('Junior')
+elif i <= 25:
+    print('Sênior')
+elif i > 25:
+    print('Master')
