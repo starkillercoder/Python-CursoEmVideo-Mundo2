@@ -1,0 +1,10 @@
+s = float(input('Qual o seu salário? '))
+c = float(input('Qual o valor da casa? '))
+m = int(input('Em quantos anos deseja pagar a casa? '))
+p = c / (m * 12)
+l = s * (30/100)
+print(f'Cda parcela custará R${p:.2f}, e não pode exceder 30% do seu salário.')
+if l >= p:
+    print('Empréstimo aprovado!')
+else:
+    print('Empréstimo negado!')
