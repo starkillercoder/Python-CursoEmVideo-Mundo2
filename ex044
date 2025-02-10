@@ -1,0 +1,20 @@
+p = float(input('Qual o preço do produto? R$'))
+debche = p * (90/100)
+c1 = p * (95/100)
+c2 = p
+c3 = p * (120/100)
+print('''[ 1 ] Débito
+[ 2 ] Cheque
+[ 3 ] Cartão''')
+o = int(input('Forma de pagamento: '))
+lista = ('Débito', 'Cheque', 'Cartão')
+if o == 1 or o == 2:
+    print(f'Preço no {lista[o - 1]}: R${debche}')
+if o == 3:
+    v = int(input('Em quantas vezes? '))
+    if v == 1:
+        print(f'Valor no {lista[o - 1]}(1x): R${c1}')
+    if v == 2:
+        print(f'Valor da prestação no {lista[o - 1]}(2x): R${c2 / 2}')
+    if v >= 3:
+        print(f'Valor da prestação no {lista[o - 1]}({v}x): R${c3 / v}')
