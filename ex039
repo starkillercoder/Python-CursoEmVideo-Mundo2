@@ -1,0 +1,9 @@
+from datetime import date
+a = int(input('Ano de nascimento: '))
+ij = date.today().year - a
+if ij == 18:
+    print('Já é hora de se alistar!')
+elif ij > 18:
+    print(f'Você deveria ter se alistado em {a + 18}.')
+elif ij < 18:
+    print(f'Você poderá se alistar em {a + 18}.')
