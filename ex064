@@ -1,0 +1,7 @@
+n = int(input('Digite um número: (999 para parar)'))
+q = s = 0
+while n != 999:
+    q += 1
+    s += n
+    n = int(input('Digite um número: (999 para parar)'))
+print(f'Foram digitados {q} valores e a soma entre eles é {s}.')
