@@ -1,0 +1,15 @@
+n = int(input('Digite o número que deseja saber a fatorial: '))
+print(f'Calculando fatorial de {n}: {n}! =', end=' ')
+cont = 0
+nf = n
+f = 1
+while cont != n:
+    print(nf, end=' ')
+    f *= nf
+    nf -= 1
+    if cont < n - 1:
+        print('x', end=' ')
+    else:
+        print('=', end=' ')
+    cont += 1
+print(f)
