@@ -1,0 +1,17 @@
+tpa = int(input('Primeiro termo: '))
+rpa = int(input('Razão: '))
+r = 'S'
+cont = 0
+tot = 10
+c = 0
+while r == 'S':
+    cont += tot
+    while c < tot:
+        print(tpa)
+        tpa += rpa
+        c += 1
+        cont -= 1
+    t = int(input('Quantos termos a mais? '))
+    if t == 0:
+        break
+    tot += t
