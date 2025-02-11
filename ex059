@@ -1,0 +1,31 @@
+from time import sleep
+r = 0
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número: '))
+while r != 5:
+    r = int(input('[1] Somar'
+            '\n[2] Multiplicar'
+            '\n[3] Maior'
+            '\n[4] Novos números'
+            '\n[5] Finalizar'
+                  '\nSua opção: '))
+    if r == 1:
+        print(n1 + n2)
+    if r == 2:
+        print(n1 * n2)
+    if r == 3:
+        if n1 > n2:
+            print(f'{n1} é maior!')
+        elif n1 == n2:
+            print('São iguais!')
+        else:
+            print(f'{n2} é maior!')
+    if r == 4:
+        n1 = int(input('Digite um número: '))
+        n2 = int(input('Digite um número: '))
+    if r > 5 or r < 1:
+        r = int(input('Tente novamente:'))
+sleep(1)
+print('FINALIZANDO...')
+sleep(1)
+print('PROGRAMA FINALIZADO.')
