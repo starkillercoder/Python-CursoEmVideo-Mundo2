@@ -1,0 +1,9 @@
+p = str(input('Digite uma frase: ')).upper().strip().split()
+pj = ''.join(p)
+pr = pj[::-1]
+if pj == pr:
+    print(f'Essa frase é um palíndromo!'
+          f'\n{pj} é igual a {pr}')
+else:
+    print(f'Essa frase não é um palíndromo!'
+          f'\n{pj} não é igual a {pr}')
