@@ -1,0 +1,4 @@
+s = str(input('Por favor informe seu sexo: ')).upper().strip()[0]
+while s not in 'FM':
+    s = str(input('Resposta inválida. Por favor informe seu sexo: ')).upper().strip()[0]
+print(f'Sexo {s} registrado com sucesso.')
