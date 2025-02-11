@@ -1,0 +1,12 @@
+from random import randint
+print('Pensei em um número entre 0 e 10, tente adivinhar.')
+p = int(input('Qual seu palpite? '))
+c = randint(0, 10)
+t = 0
+while p != c:
+    if c < p:
+        p = int(input('Menos...Tente de novo: '))
+    if c > p:
+        p = int(input('Mais...Tente de novo: '))
+    t += 1
+print(f'Acertou com {t + 1} tentativas, o número era {c}!')
