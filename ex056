@@ -1,0 +1,22 @@
+nhmv = ''
+ihmv = 0
+mm20 = 0
+si = 0
+for c in range(1, 5):
+    n = str(input('Nome: ')).strip().title()
+    i = int(input('Idade: '))
+    s = str(input('Sexo [M/F]: ')).upper().strip()[0]
+    si += i
+    if s == 'M':
+        if c == 1:
+                nhmv = n
+                ihmv = i
+        else:
+            if i > ihmv:
+                nhmv = n
+                ihmv = i
+    if i < 20 and s == 'F':
+        mm20 += 1
+print(f'O homem mais velho se chama {nhmv} e tem {ihmv} anos.'
+      f'\nHá {mm20} com idade inferior a 20 anos.'
+      f'\nA média de idade do grupo é de {si/4}.')
