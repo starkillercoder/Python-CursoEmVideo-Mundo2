@@ -1,0 +1,13 @@
+n = int(input('Digite um número: '))
+p = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        print(f'{'\33[32m'}{c}{'\33[m'}', end=' ')
+        p += 1
+    else:
+        print(f'{'\33[31m'}{c}{'\33[m'}', end=' ')
+print(f'\nO número {n} foi divisível {p} vezes, por isso ele', end=' ')
+if p == 2:
+    print('É PRIMO!')
+else:
+    print('NÃO É PRIMO!')
