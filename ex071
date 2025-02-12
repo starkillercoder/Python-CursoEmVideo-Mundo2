@@ -1,0 +1,17 @@
+quantidade = int(input('Quanto deseja sacar? '))
+notas_50 = quantidade // 50
+resto_50 = quantidade % 50
+notas_20 = resto_50 // 20
+resto_20 = resto_50 % 20
+notas_10 = resto_20 // 10
+resto_10 = resto_20 % 10
+notas_1 = resto_10 // 1
+print('Você poderá sacar: ')
+if notas_50 > 0:
+    print(f'{notas_50} nota(s) de R$50')
+if notas_20 > 0:
+    print(f'{notas_20} notas(s) de R$20')
+if notas_10 > 0:
+    print(f'{notas_10} nota(s) de R$10')
+if notas_1 > 0:
+    print(f'{notas_1} moeda(s) de R$1')
